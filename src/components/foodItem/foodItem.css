@@ -58,3 +58,6 @@ animation: fadeIn 1s;
     border-radius: 50px;
     background-color: #fff;
 }
+.food-item-counter img{
+    width: 30px;
+}
