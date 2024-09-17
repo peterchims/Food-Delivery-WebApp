@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import { assets } from '../../assets'
+import { assets } from '../src/assets'
 
 
 const Nav = () => {
