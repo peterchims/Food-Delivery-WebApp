@@ -5,7 +5,7 @@ import Cart from './pages/Cart/cart';
 import Placeorder from './pages/placeorder/placeorder';
 import Footer from './components/footer/footer';
 import Login from './components/LoginPage/Login';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/NotFoundPage';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useState } from 'react';
 
