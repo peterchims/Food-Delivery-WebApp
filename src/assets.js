@@ -120,8 +120,6 @@ export const assets = {
     food_30,
     food_31,
     food_32
-    
-
 }
 
 
