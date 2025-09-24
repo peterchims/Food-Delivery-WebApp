@@ -1,25 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-  font-family: 'Roboto-Light.ttf';
-  src: url('./assets/Roboto/Roboto-Light.ttf');
+  font-family: 'RobotoLight';
+  src: url('./assets/Roboto/Roboto-Light.ttf') format('truetype');
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto-Light.ttf';
+  font-family: 'RobotoLight', sans-serif;
   scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .app {
   width: 80%;
   margin: auto;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
