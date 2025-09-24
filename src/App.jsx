@@ -5,24 +5,27 @@ import Cart from './pages/Cart/cart';
 import Placeorder from './pages/placeorder/placeorder';
 import Footer from './components/footer/footer';
 import Login from './components/LoginPage/Login';
+import NotFound from './pages/NotFound';
+import ErrorBoundary from './components/ErrorBoundary';
 import { useState } from 'react';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <>
-      {showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
+    <ErrorBoundary>
+      {showLogin && <Login setShowLogin={setShowLogin} />}
       <div className="app">
         <Nav setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<Placeorder />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
-    </>
+    </ErrorBoundary>
   );
 };
 
