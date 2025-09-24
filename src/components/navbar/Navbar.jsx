@@ -1,4 +1,5 @@
-import React, { useState, useContext } from 'react';
+/* eslint-disable react/prop-types */
+import { useState, useContext } from 'react';
 import './navbar.css';
 import { assets } from '../../assets';
 import { Link } from 'react-router-dom';
