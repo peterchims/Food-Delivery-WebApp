@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+/* eslint-disable react/prop-types */
+import { useContext } from 'react';
 import './foodItem.css';
 import { assets } from '../../assets';
 import { StoreContext } from '../ExploreMenu/context/storeContent';

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import './placeholder.css';
 import { StoreContext } from '../../components/ExploreMenu/context/storeContent';
 

@@ -1,4 +1,5 @@
-import { createContext, useEffect } from 'react';
+/* eslint-disable react/prop-types */
+import { createContext } from 'react';
 import { food_list } from '../../../assets/assets/assets';
 import { useState } from 'react';
 

@@ -1,4 +1,6 @@
-import React, { useContext } from 'react';
+/* eslint-disable react/jsx-key */
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useContext } from 'react';
 import { StoreContext } from '../../components/ExploreMenu/context/storeContent';
 import './cart.css';
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +23,7 @@ const cart = () => {
         </div>
         <br />
         <hr />
-        {food_list.map((item, index) => {
+        {food_list.map(item => {
           if (cartItems[item._id] > 0) {
             return (
               <div>
