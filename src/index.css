@@ -1,12 +1,17 @@
+/* --- Tailwind layers must come first --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* --- Custom font --- */
 @font-face {
   font-family: 'RobotoLight';
   src: url('./assets/Roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
+/* --- Global reset & base styles --- */
 * {
   padding: 0;
   margin: 0;
@@ -29,6 +34,7 @@ a {
   margin: auto;
 }
 
+/* --- Example animation --- */
 @keyframes fadeIn {
   0% {
     opacity: 0;
